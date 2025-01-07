@@ -1,3 +1,4 @@
+/* Corps de la page */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,13 +8,27 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('votre-image.jpg'); /* Dégradé sombre et image */
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    padding: 50px 20px;
+    color: white;
 }
 
+.header-text {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ombre douce */
+}
+
+/* Navigation */
 header nav ul {
     list-style: none;
     padding: 0;
@@ -29,10 +44,12 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Contenu principal */
 main {
     padding: 20px;
 }
 
+/* Bouton */
 .btn {
     display: inline-block;
     background: #007BFF;
@@ -40,8 +57,22 @@ main {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
     background: #0056b3;
+}
+
+/* Conteneur du bouton */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    align-items: center; /* Centre le bouton verticalement */
+    height: 150px; /* Hauteur du carré */
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
