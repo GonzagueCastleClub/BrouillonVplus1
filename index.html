@@ -93,37 +93,37 @@
       color: #666;
       text-align: justify;
     }
-
-   /* Style du conteneur général */
-  .carousel {
-    overflow: hidden; /* Cache les images qui dépassent de l'écran */
-    width: 100%; /* Prend toute la largeur de l'écran */
-    height: 20vh; /* Hauteur fixée à 20% de la hauteur de l'écran */
-    position: relative;
-  }
-
-  /* Piste des images */
-  .carousel-track {
-    display: flex; /* Aligne les images horizontalement */
-    animation: scroll 5s linear infinite; /* Animation continue */
-  }
-
-  /* Style des images dans le carrousel */
-  .carousel-track img {
-    height: 10%; /* S'assure que les images respectent la hauteur de la bande */
-    width: auto; /* Conserve les proportions des images */
-    flex-shrink: 0; /* Empêche la réduction de taille des images */
-  }
-
-  /* Animation du défilement */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0); /* Position de départ */
+    /* Conteneur du carrousel */
+    .carousel {
+      overflow: hidden; /* Cache les images en dehors de la vue */
+      width: 100%; /* Prend toute la largeur de l'écran */
+      height: 20vh; /* 20% de la hauteur de l'écran */
+      position: relative;
     }
-    100% {
-      transform: translateX(-100%); /* Fin de défilement */
+
+    /* Bande défilante */
+    .carousel-track {
+      display: flex; /* Aligne les images en ligne */
+      animation: scroll 20s linear infinite; /* Animation fluide sur 20 secondes */
     }
-  }
+
+    /* Images du carrousel */
+    .carousel-track img {
+      height: 100%; /* La hauteur remplit le conteneur */
+      width: auto; /* La largeur s'ajuste proportionnellement */
+      flex-shrink: 0; /* Empêche les images de rétrécir */
+    }
+
+    /* Animation de défilement */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0); /* Position initiale */
+      }
+      100% {
+        transform: translateX(-100%); /* Défile jusqu'à la fin */
+      }
+    }
+
 
     .event a {
       display: inline-block;
