@@ -109,9 +109,9 @@
 
     /* Images du carrousel */
     .carousel-track img {
-      height: 100%; /* La hauteur remplit le conteneur */
-      width: auto; /* La largeur s'ajuste proportionnellement */
-      flex-shrink: 0; /* Empêche les images de rétrécir */
+       height: 100%; /* Hauteur maximale fixée par le conteneur */
+       width: auto; /* Garde les proportions */
+       max-width: 100%; /* Empêche le dépassement horizontal */
     }
 
     /* Animation de défilement */
