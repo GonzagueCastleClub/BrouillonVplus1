@@ -94,6 +94,31 @@
       text-align: justify;
     }
 
+    .carousel {
+      overflow: hidden;
+      width: 100%; /* Ajustez la largeur selon vos besoins */
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+
+    .carousel-track img {
+      width: 100%; /* Ajustez la largeur des images selon vos besoins */
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+
     .event a {
       display: inline-block;
       justify-content: center;
@@ -136,6 +161,17 @@
 <br>- Les Rendez-Vous Membres, après-midis (baltrap, promenades en voitures de collection, balades en avion ou en hélicoptère, etc.) suivies de dîners, réservés uniquement à nos membres.
 Une expérience privilégiée, sur invitation seulement.</p>
   </section>
+
+   <div class="carousel">
+    <div class="carousel-track">
+      <img src="BannerTrompe.jpg" alt="Description de l'image 1">
+      <img src="SoiréeDistingués.jpg" alt="Description de l'image 2">
+      <img src="BannerTrompe.jpg" alt="Description de l'image 3">
+      <img src="SoiréeDistingués.jpg" alt="Description de l'image 1">
+      <img src="BannerTrompe.jpg" alt="Description de l'image 2">
+      <img src="SoiréeDistingués.jpg" alt="Description de l'image 3">
+    </div>
+  </div>
 
   <section id="events" class="events">
     <h2>Notre prochain événement</h2>
