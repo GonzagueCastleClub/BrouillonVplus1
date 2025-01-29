@@ -96,10 +96,6 @@
       color: #666;
       text-align: justify;
     }
-
-    * {
-  outline: 1px solid red;
-}
     /* Conteneur du carrousel */
     .carousel {
       overflow: hidden; /* Cache les images en dehors de la vue */
@@ -118,6 +114,7 @@
 
     /* Images du carrousel */
     .carousel-track img {
+    max-width: 100%;
     height: auto; /* S'ajuste automatiquement à la hauteur définie */
     width: auto; /* Préserve les proportions */
     max-height: 30vh; /* (default : 20vh) Fixe une hauteur maximale pour chaque image */
